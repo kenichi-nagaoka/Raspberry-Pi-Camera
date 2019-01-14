@@ -1,0 +1,13 @@
+## Pythonでカメラを使うためのモジュールををインストール
+sudo apt-get update
+sudo apt-get install python-picamera python3-picamera
+
+## コマンドラインからカメラ撮影
+raspistill -vf ./pic/3raspi-camera-1.jpg
+
+## Camera.pyの実行前
+export GOOGLE_APPLICATION_CREDENTIALS=/home/pi/seraphic-scarab-228015-84e9a2d6c81b.json
+コマンドでGCPのAPIを叩くための資格情報を環境変数に設定する 
+
+## 参考
+https://www.kabegiwablog.com/entry/2018/07/15/183846
